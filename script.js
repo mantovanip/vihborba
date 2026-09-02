@@ -391,8 +391,7 @@ function createGallery() {
 
 
         const imagePath =
-            `IMAGENS/vih${index}.jpg`;
-
+            `imagens/vih${index}.jpg`;
 
         image.src =
             imagePath;
@@ -696,7 +695,7 @@ function createReels() {
                             );
 
                         })
-                        .catch(() => {});
+                        .catch(() => { });
 
 
                 } else {
