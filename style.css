@@ -661,7 +661,7 @@ button {
             rgba(0,0,0,.2),
             rgba(0,0,0,.4)
         ),
-        url("IMAGENS/vih3.jpg");
+        url("imagens/vih3.jpg");
 
     background-position: center;
 
@@ -1583,7 +1583,7 @@ button {
             rgba(0,0,0,.52),
             rgba(0,0,0,.65)
         ),
-        url("IMAGENS/vih20.jpg")
+        url("imagens/vih20.jpg")
         center / cover no-repeat;
 
     transform: scale(1.04);

@@ -603,7 +603,7 @@ function createReels() {
 
 
         video.src =
-            `REELS/bor${index}.mp4`;
+            `reels/bor${index}.mp4`;
 
         video.preload =
             "metadata";
