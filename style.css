@@ -418,7 +418,8 @@ button {
 
 .hero-eyebrow {
 
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    margin-left: 90px;
 
     opacity: .8;
 
@@ -2027,8 +2028,7 @@ button {
         left: 20px;
         right: 20px;
 
-        top: 84px;
-        bottom: auto;
+        bottom: 15%;
 
     }
 
