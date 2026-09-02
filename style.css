@@ -2027,7 +2027,8 @@ button {
         left: 20px;
         right: 20px;
 
-        bottom: 15%;
+        top: 84px;
+        bottom: auto;
 
     }
 
