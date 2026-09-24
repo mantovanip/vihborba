@@ -1,15 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 <rect width="512" height="512" rx="112" fill="#111111"/>
-<g fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
-<path d="M256 112c-58 0-104 47-104 105 0 66 48 128 104 183 56-55 104-117 104-183 0-58-46-105-104-105Z"/>
-<path d="M256 400V150"/>
-<path d="M205 153c13 34 29 62 51 82"/>
-<path d="M307 153c-13 34-29 62-51 82"/>
-<path d="M173 205c23 7 45 20 63 38"/>
-<path d="M339 205c-23 7-45 20-63 38"/>
-<path d="M158 265c33 0 68 12 98 37"/>
-<path d="M354 265c-33 0-68 12-98 37"/>
-<path d="M179 325c24-1 50 5 77 20"/>
-<path d="M333 325c-24-1-50 5-77 20"/>
+<g fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M104 306c12-103 75-177 152-177s140 74 152 177c-18 54-73 92-152 92s-134-38-152-92Z"/>
+  <path d="M256 129v269"/>
+  <path d="M256 129c-30 48-45 106-45 174 0 43 9 75 24 95"/>
+  <path d="M256 129c30 48 45 106 45 174 0 43-9 75-24 95"/>
+  <path d="M256 129c-52 34-85 90-97 166"/>
+  <path d="M256 129c52 34 85 90 97 166"/>
+  <path d="M256 129c-74 17-122 69-140 143"/>
+  <path d="M256 129c74 17 122 69 140 143"/>
 </g>
 </svg>
