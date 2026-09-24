@@ -2679,3 +2679,9 @@ button {
         min-width: 38px;
     }
 }
+
+
+/* Botão flutuante topo arredondado */
+.floating-top {
+    border-radius: 999px;
+}
