@@ -593,7 +593,7 @@ function createReels() {
 
         number.textContent =
             index === 7
-                ? "PUBLI / GARAGE BURG"
+                ? "PUBLI / GARAGEBURG"
                 : `REEL / ${String(index).padStart(2, "0")}`;
 
 
@@ -655,7 +655,7 @@ function createReels() {
         if (index === 7) {
 
             card.classList.add("reel-sponsored");
-            card.setAttribute("aria-label", "Publi — Garage Burg · mais de 150 mil visualizações");
+            card.setAttribute("aria-label", "Publi — GarageBurg · mais de 150 mil visualizações");
 
             const views = document.createElement("span");
             views.className = "reel-views";
