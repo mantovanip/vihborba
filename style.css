@@ -2825,3 +2825,17 @@ button {
         padding: 12px 15px;
     }
 }
+
+
+/* CREDIT — assinatura discreta */
+.developer-credit {
+    font-size: 7px;
+    letter-spacing: .08em;
+    text-transform: lowercase;
+    opacity: .28;
+    transition: opacity .25s ease;
+}
+
+.developer-credit:hover {
+    opacity: .65;
+}
