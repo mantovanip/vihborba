@@ -2887,3 +2887,94 @@ button {
         height: 100px;
     }
 }
+
+
+/* =========================================================
+   TRANSIÇÕES ENTRE SEÇÕES — SUTIS
+========================================================= */
+
+.manifesto,
+.about,
+.partnerships {
+    position: relative;
+}
+
+.manifesto::after,
+.about::after,
+.partnerships::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 36px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.manifesto::after,
+.about::after,
+.partnerships::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(244,241,235,0),
+        var(--black)
+    );
+}
+
+.parallax-section::after,
+.numbers::after,
+.reels-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 36px;
+    z-index: 3;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        rgba(17,17,17,0),
+        var(--white)
+    );
+}
+
+.parallax-section::after {
+    height: 52px;
+    background: linear-gradient(
+        to bottom,
+        rgba(17,17,17,0),
+        rgba(244,241,235,.92)
+    );
+}
+
+.cta-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 24px;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        rgba(17,17,17,0),
+        var(--black)
+    );
+}
+
+@media (max-width: 900px) {
+    .manifesto::after,
+    .about::after,
+    .partnerships::after,
+    .parallax-section::after,
+    .numbers::after,
+    .reels-section::after {
+        height: 26px;
+    }
+
+    .parallax-section::after {
+        height: 38px;
+    }
+}
