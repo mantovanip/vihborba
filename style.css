@@ -2562,3 +2562,42 @@ button {
     }
 
 }
+
+/* =========================================================
+   PUBLI / GARAGE BURG
+========================================================= */
+
+.reel-sponsored {
+    position: relative;
+}
+
+.reel-sponsored::before {
+    content: "PUBLI";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 5;
+    padding: 6px 9px;
+    background: rgba(17, 17, 17, .72);
+    color: var(--white);
+    font-size: 8px;
+    letter-spacing: .18em;
+    line-height: 1;
+    backdrop-filter: blur(8px);
+}
+
+.reel-views {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px 10px;
+    font-size: 8px;
+    letter-spacing: .14em;
+    color: var(--white);
+    background: rgba(17, 17, 17, .62);
+    backdrop-filter: blur(8px);
+}
+
+.reel-sponsored .reel-number {
+    letter-spacing: .12em;
+}
