@@ -2832,10 +2832,15 @@ button {
     font-size: 7px;
     letter-spacing: .08em;
     text-transform: lowercase;
-    opacity: .28;
+    opacity: .48;
     transition: opacity .25s ease;
 }
 
+.developer-credit strong {
+    font-weight: 500;
+    letter-spacing: .06em;
+}
+
 .developer-credit:hover {
-    opacity: .65;
+    opacity: .8;
 }
