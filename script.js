@@ -592,7 +592,9 @@ function createReels() {
             "reel-number";
 
         number.textContent =
-            `REEL / ${String(index).padStart(2, "0")}`;
+            index === 7
+                ? "PUBLI / GARAGE BURG"
+                : `REEL / ${String(index).padStart(2, "0")}`;
 
 
         const play =
@@ -653,7 +655,12 @@ function createReels() {
         if (index === 7) {
 
             card.classList.add("reel-sponsored");
-            card.setAttribute("aria-label", "Publi — Garage Burg");
+            card.setAttribute("aria-label", "Publi — Garage Burg · mais de 150 mil visualizações");
+
+            const views = document.createElement("span");
+            views.className = "reel-views";
+            views.textContent = "+150K VIEWS";
+            overlay.appendChild(views);
 
             card.addEventListener("dblclick", () => {
                 window.open(
