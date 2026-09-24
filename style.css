@@ -2791,3 +2791,37 @@ button {
     letter-spacing: .12em;
     white-space: nowrap;
 }
+
+
+/* CTA — INSTAGRAM */
+.cta-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    padding: 13px 18px;
+    border: 1px solid rgba(255,255,255,.45);
+    color: var(--white);
+    font-size: 9px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    transition: background .3s ease, color .3s ease, transform .3s ease;
+}
+
+.cta-instagram span {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.cta-instagram:hover {
+    background: var(--white);
+    color: var(--black);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 520px) {
+    .cta-instagram {
+        font-size: 8px;
+        padding: 12px 15px;
+    }
+}
