@@ -593,7 +593,7 @@ function createReels() {
 
         number.textContent =
             index === 7
-                ? "PUBLI / GARAGE BURG"
+                ? "GARAGE BURG"
                 : `REEL / ${String(index).padStart(2, "0")}`;
 
 
