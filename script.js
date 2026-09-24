@@ -880,3 +880,14 @@ updateHeader();
 updateScrollProgress();
 
 updateParallax();
+
+/* Botão voltar ao topo aparece somente após rolar */
+const floatingTop = document.querySelector(".floating-top");
+
+function updateFloatingTop() {
+    if (!floatingTop) return;
+    floatingTop.classList.toggle("visible", window.scrollY > 300);
+}
+
+window.addEventListener("scroll", updateFloatingTop, { passive: true });
+updateFloatingTop();
