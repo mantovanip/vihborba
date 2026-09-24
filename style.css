@@ -2604,3 +2604,190 @@ button {
     background: rgba(17, 17, 17, .62);
     backdrop-filter: blur(8px);
 }
+
+.reel-sponsored .reel-number {
+    letter-spacing: .12em;
+}
+
+
+/* =========================================================
+   BOTÕES FLUTUANTES
+========================================================= */
+
+.floating-actions {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+}
+
+.floating-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(17,17,17,.86);
+    color: var(--white);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-size: 8px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    transition: transform .3s ease, background .3s ease, color .3s ease;
+}
+
+.floating-action strong {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.floating-action:hover {
+    transform: translateY(-3px);
+    background: var(--white);
+    color: var(--black);
+}
+
+.floating-top {
+    min-width: 42px;
+    padding: 0 12px;
+}
+
+.floating-top span {
+    font-size: 7px;
+    letter-spacing: .14em;
+}
+
+@media (max-width: 520px) {
+    .floating-actions {
+        right: 14px;
+        bottom: 14px;
+        gap: 7px;
+    }
+
+    .floating-action {
+        min-height: 38px;
+        padding: 0 13px;
+        gap: 10px;
+    }
+
+    .floating-contact span {
+        font-size: 7px;
+    }
+
+    .floating-top {
+        min-width: 38px;
+    }
+}
+
+
+/* Botão flutuante topo arredondado */
+.floating-top {
+    border-radius: 999px;
+}
+
+
+/* =========================================================
+   GALERIA — SEPARAÇÃO COMPLETA DAS POLAROIDS
+========================================================= */
+
+@media (min-width: 901px) {
+    .polaroid-stage {
+        min-height: 1640px !important;
+    }
+
+    .polaroid:nth-child(15) { left: 3% !important; top: 900px !important; }
+    .polaroid:nth-child(16) { left: 22% !important; top: 870px !important; }
+    .polaroid:nth-child(17) { left: 41% !important; top: 930px !important; }
+    .polaroid:nth-child(18) { left: 60% !important; top: 880px !important; }
+    .polaroid:nth-child(19) { left: 79% !important; top: 940px !important; }
+
+    .polaroid:nth-child(20) { left: 5% !important; top: 1190px !important; }
+    .polaroid:nth-child(21) { left: 24% !important; top: 1150px !important; }
+    .polaroid:nth-child(22) { left: 43% !important; top: 1210px !important; }
+    .polaroid:nth-child(23) { left: 62% !important; top: 1160px !important; }
+    .polaroid:nth-child(24) { left: 81% !important; top: 1200px !important; }
+
+    .polaroid:nth-child(25) {
+        left: 43% !important;
+        top: 1460px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .polaroid-stage {
+        min-height: 1800px !important;
+    }
+
+    .polaroid:nth-child(n+9) {
+        display: block !important;
+    }
+
+    .polaroid:nth-child(9)  { left: 3% !important; top: 1030px !important; }
+    .polaroid:nth-child(10) { left: 48% !important; top: 1000px !important; }
+    .polaroid:nth-child(11) { left: 3% !important; top: 1240px !important; }
+    .polaroid:nth-child(12) { left: 48% !important; top: 1210px !important; }
+    .polaroid:nth-child(13) { left: 3% !important; top: 1450px !important; }
+    .polaroid:nth-child(14) { left: 48% !important; top: 1420px !important; }
+    .polaroid:nth-child(15) { left: 3% !important; top: 1660px !important; }
+    .polaroid:nth-child(16) { left: 48% !important; top: 1630px !important; }
+
+    .polaroid:nth-child(n+17) {
+        display: none !important;
+    }
+}
+
+
+.floating-top {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .25s ease, visibility .25s ease, transform .25s ease;
+}
+
+.floating-top.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   PUBLI — AJUSTE FINAL
+========================================================= */
+
+.reel-sponsored::before {
+    content: "PUBLI";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+    padding: 5px 8px;
+    background: rgba(17, 17, 17, .72);
+    color: var(--white);
+    font-size: 7px;
+    letter-spacing: .16em;
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.reel-sponsored .reel-number {
+    position: absolute;
+    top: 12px;
+    left: 68px;
+    z-index: 9;
+    margin: 0;
+    padding: 5px 0;
+    letter-spacing: .12em;
+    white-space: nowrap;
+}
