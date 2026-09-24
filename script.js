@@ -12,7 +12,7 @@ const SITE_CONFIG = {
 
     imageCount: 25,
 
-    reelCount: 6
+    reelCount: 7
 
 };
 
@@ -602,8 +602,12 @@ function createReels() {
             "reel-play";
 
 
-        video.src =
-            `reels/bor${index}.mp4`;
+        const videoPath =
+            index === 7
+                ? "reels/publi1.mp4"
+                : `reels/bor${index}.mp4`;
+
+        video.src = videoPath;
 
         video.preload =
             "metadata";
@@ -645,6 +649,21 @@ function createReels() {
         card.appendChild(play);
 
         reelsGrid.appendChild(card);
+
+        if (index === 7) {
+
+            card.classList.add("reel-sponsored");
+            card.setAttribute("aria-label", "Publi — Garage Burg");
+
+            card.addEventListener("dblclick", () => {
+                window.open(
+                    "https://www.instagram.com/reel/DSkiQfEjibB/",
+                    "_blank",
+                    "noopener,noreferrer"
+                );
+            });
+
+        }
 
 
         /*
