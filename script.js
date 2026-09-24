@@ -12,7 +12,7 @@ const SITE_CONFIG = {
 
     imageCount: 25,
 
-    reelCount: 7
+    reelCount: 8
 
 };
 
@@ -592,7 +592,7 @@ function createReels() {
             "reel-number";
 
         number.textContent =
-            index === 7
+            index === 8
                 ? "GARAGE BURG"
                 : `REEL / ${String(index).padStart(2, "0")}`;
 
@@ -605,7 +605,7 @@ function createReels() {
 
 
         const videoPath =
-            index === 7
+            index === 8
                 ? "reels/publi1.mp4"
                 : `reels/bor${index}.mp4`;
 
@@ -652,7 +652,7 @@ function createReels() {
 
         reelsGrid.appendChild(card);
 
-        if (index === 7) {
+        if (index === 8) {
 
             card.classList.add("reel-sponsored");
             card.setAttribute("aria-label", "Publi — GarageBurg · mais de 150 mil visualizações");
