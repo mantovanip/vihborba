@@ -2601,3 +2601,81 @@ button {
 .reel-sponsored .reel-number {
     letter-spacing: .12em;
 }
+
+
+/* =========================================================
+   BOTÕES FLUTUANTES
+========================================================= */
+
+.floating-actions {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+}
+
+.floating-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(17,17,17,.86);
+    color: var(--white);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-size: 8px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    transition: transform .3s ease, background .3s ease, color .3s ease;
+}
+
+.floating-action strong {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.floating-action:hover {
+    transform: translateY(-3px);
+    background: var(--white);
+    color: var(--black);
+}
+
+.floating-top {
+    min-width: 42px;
+    padding: 0 12px;
+}
+
+.floating-top span {
+    font-size: 7px;
+    letter-spacing: .14em;
+}
+
+@media (max-width: 520px) {
+    .floating-actions {
+        right: 14px;
+        bottom: 14px;
+        gap: 7px;
+    }
+
+    .floating-action {
+        min-height: 38px;
+        padding: 0 13px;
+        gap: 10px;
+    }
+
+    .floating-contact span {
+        font-size: 7px;
+    }
+
+    .floating-top {
+        min-width: 38px;
+    }
+}
