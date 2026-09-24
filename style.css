@@ -2978,3 +2978,45 @@ button {
         height: 38px;
     }
 }
+
+
+/* =========================================================
+   CORREÇÃO — TRANSIÇÕES NÃO ULTRAPASSAM A SEÇÃO
+========================================================= */
+
+@media (max-width: 900px) {
+    .manifesto,
+    .about,
+    .numbers,
+    .parallax-section,
+    .reels-section,
+    .partnerships,
+    .cta-section {
+        isolation: isolate;
+    }
+
+    .manifesto::after,
+    .about::after,
+    .numbers::after,
+    .parallax-section::after,
+    .reels-section::after,
+    .partnerships::after,
+    .cta-section::after {
+        bottom: 0;
+        height: 24px;
+        z-index: 1;
+    }
+
+    .parallax-section::after {
+        height: 34px;
+    }
+
+    .cta-section::after {
+        height: 18px;
+    }
+
+    .footer {
+        position: relative;
+        z-index: 2;
+    }
+}
