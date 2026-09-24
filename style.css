@@ -2449,6 +2449,95 @@ button {
 }
 
 
+
+
+/* =========================================================
+   REDES SOCIAIS / MÉTRICAS
+========================================================= */
+
+.social-links {
+    margin-top: 70px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border-dark);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+}
+
+.social-links a {
+    min-height: 78px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: var(--white);
+    border-right: 1px solid var(--border-dark);
+    transition: opacity .3s ease, transform .3s var(--ease);
+}
+
+.social-links a:first-child {
+    padding-left: 0;
+    justify-content: flex-start;
+}
+
+.social-links a:last-child {
+    border-right: 0;
+}
+
+.social-links a:hover {
+    opacity: .68;
+    transform: translateY(-3px);
+}
+
+.social-links svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    flex: 0 0 auto;
+}
+
+.social-links svg rect,
+.social-links svg circle {
+    fill: none;
+}
+
+.social-links svg .social-fill {
+    fill: currentColor;
+    stroke: none;
+}
+
+.social-links span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-links a,
+    .social-links a:first-child {
+        min-height: 68px;
+        padding: 0 16px;
+        justify-content: flex-start;
+        border-right: 0;
+        border-bottom: 1px solid var(--border-dark);
+    }
+
+    .social-links a:nth-child(odd) {
+        border-right: 1px solid var(--border-dark);
+    }
+
+    .social-links a:last-child {
+        border-bottom: 0;
+    }
+}
+
 /* =========================================================
    REDUCE MOTION
 ========================================================= */
