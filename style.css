@@ -2736,3 +2736,19 @@ button {
         display: none !important;
     }
 }
+
+
+.floating-top {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .25s ease, visibility .25s ease, transform .25s ease;
+}
+
+.floating-top.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
